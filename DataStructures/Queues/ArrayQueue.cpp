@@ -14,32 +14,32 @@ class ArrayQueue
 
 		bool isEmpty()
 		{
-			return (this->m_Front == this->m_Back ? true : false);
+			return (m_Front == m_Back ? true : false);
 		}
 
 	public:
 		ArrayQueue()
 		{
-			this->m_Size = 8;
-			this->m_Front = 0;
-			this->m_Back = 0;
-			this->m_Queue = new X[this->m_Size];
+			m_Size = 8;
+			m_Front = 0;
+			m_Back = 0;
+			m_Queue = new X[m_Size];
 		}
 		
 		ArrayQueue(const unsigned long &pi_Size)
 		{
-			this->m_Size = pi_Size;
-			this->m_Front = 0;
-			this->m_Back = 0;
-			this->m_Queue = new X[this->m_Size];
+			m_Size = pi_Size;
+			m_Front = 0;
+			m_Back = 0;
+			m_Queue = new X[m_Size];
 		}
 
 		void pushFront(const X &pi_Element)
 		{
-			if((this->m_Front + 1)%this->m_Size != (this->m_Back%this->m_Size))
+			if((m_Front + 1)%m_Size != (m_Back%m_Size))
 			{
-				this->m_Queue[this->m_Front] = pi_Element;
-				this->m_Front = (++this->m_Front)%this->m_Size;
+				m_Queue[m_Front] = pi_Element;
+				m_Front = (++m_Front)%m_Size;
 			}
 			else
 				std::cout << "Queue Full\n";
@@ -54,8 +54,8 @@ class ArrayQueue
 			}
 			else
 			{
-				po_Element = this->m_Queue[this->m_Back];
-				this->m_Back = (++this->m_Back)%this->m_Size;
+				po_Element = m_Queue[m_Back];
+				m_Back = (++m_Back)%m_Size;
 				l_ReturnValue = true;
 			}
 			return l_ReturnValue;
@@ -69,11 +69,11 @@ class ArrayQueue
 			}
 			else
 			{
-				long l_Index = this->m_Back;
-				while(l_Index != this->m_Front)
+				long l_Index = m_Back;
+				while(l_Index != m_Front)
 				{
-					std::cout << this->m_Queue[l_Index] << " ";
-					l_Index = (++l_Index)%this->m_Size;
+					std::cout << m_Queue[l_Index] << " ";
+					l_Index = (++l_Index)%m_Size;
 				}
 			}
 		}
