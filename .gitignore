@@ -1,0 +1,35 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+
+/COM/ConsumingDLL/x64/Debug
+/COM/ConsumingDLL/ConsumingDLL.VC.db
+/COM/ConsumingDLL/ConsumingDLL.vcxproj.filters
+/COM/ConsumingDLL/ConsumingDLL.vcxproj.user
+/COM/ConsumingDLL/ReadMe.txt
+/COM/ConsumingHenCOM/Debug
+/COM/ConsumingHenCOM/x64/Debug
+/COM/ConsumingHenCOM/ConsumingHenCOM.VC.db
+/COM/ConsumingHenCOM/ConsumingHenCOM.vcxproj.filters
+/COM/ExportingObjects/Debug
+/COM/ExportingObjects/ExportingObjects.VC.db
+/COM/ExportingObjects/ReadMe.txt
+/COM/ExportingObjects/ExportingObjects.vcxproj.filters
+/COM/ImplementingIUnkown/x64/Debug
+/COM/ImplementingIUnkown/ImplementingIUnkown.VC.db
+/COM/ImplementingIUnkown/ImplementingIUnkown.vcxproj.user
+/COM/ImplementingIUnkown/ImplementingIUnkown.vcxproj.filters
+/COM/ObjectDLLConsumption/Debug
+/COM/ObjectDLLConsumption/ReadMe.txt
+/COM/ObjectDLLConsumption/ObjectDLLConsumption.vcxproj.filters
+/COM/ObjectDLLConsumption/ObjectDLLConsumption.VC.db
+/COM/Understanding HRESULT/Debug
+/COM/Understanding HRESULT/ipch/UNDERSTANDING HRESULT-b50ada69
+/COM/Understanding HRESULT/Understanding HRESULT.vcxproj.filters
+/COM/Understanding HRESULT/Understanding HRESULT.VC.db
+/COM/Understanding HRESULT/ReadMe.txt
+/COM/UnderstandingDLL/ipch/UNDERSTANDINGDLL-3c74f4a1
+/COM/UnderstandingDLL/Debug
+/COM/UnderstandingDLL/UnderstandingDLL/Debug
+/COM/UnderstandingDLL/UnderstandingDLL/x64/Debug
