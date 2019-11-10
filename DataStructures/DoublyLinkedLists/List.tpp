@@ -299,3 +299,23 @@ typename List<Object>::iterator List<Object>::erase(iterator start, iterator end
     }
     return end;
 }
+
+template <typename Object>
+void List<Object>::reverse_list()
+{
+    Node * current = _head;
+    _tail = _head;
+    Node * next = nullptr;
+    Node * prev = nullptr;
+
+    while(current)
+    {
+        next = current->_next;
+        current->_next = prev;
+        current->_previous = next;
+        prev = current;
+        current = next;
+    }
+
+    _head = prev;
+}

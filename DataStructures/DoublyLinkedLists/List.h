@@ -45,6 +45,7 @@ public:
   iterator insert(iterator, Object &&);
   iterator erase(iterator);
   iterator erase(iterator, iterator);
+  void reverse_list();
 };
 
 template <typename Object>
