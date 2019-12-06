@@ -30,4 +30,4 @@ public:
 	virtual __stdcall ~IOfflineHen() {}
 };
 
-HRESULT __declspec(dllexport) CreateHen(IHen** pUnknwn);
+extern "C" HRESULT __declspec(dllexport) __stdcall CreateHen(IHen** pUnknwn);

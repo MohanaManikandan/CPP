@@ -72,15 +72,18 @@ struct Hen : IOnlineHen, IOfflineHen
 	}
 };
 
-HRESULT CreateHen(IHen **pHen)
+extern "C"
 {
-	*pHen = new (std::nothrow) Hen();
-
-	if (*pHen == nullptr)
+	HRESULT __stdcall CreateHen(IHen **pHen)
 	{
-		return E_OUTOFMEMORY;
-	}
+		*pHen = new (std::nothrow) Hen();
 
-	(*pHen)->AddRef();
-	return S_OK;
+		if (*pHen == nullptr)
+		{
+			return E_OUTOFMEMORY;
+		}
+
+		(*pHen)->AddRef();
+		return S_OK;
+	}
 }
